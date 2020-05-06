@@ -1,0 +1,22 @@
+use OnlineAuction;
+
+CREATE TABLE `USER` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `sellername` varchar(45) NOT NULL,
+  
+  `username` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+use OnlineAuction;
+CREATE TABLE `bid_details` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `user_name` varchar(45) NOT NULL,
+  
+  `amount` varchar(45) NOT NULL,
+  `email` varchar(450) NOT NULL,
+   `phone` varchar(450) NOT NULL,
+    `address` varchar(450) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
